@@ -1,47 +1,59 @@
-Library Management System
-https://img.shields.io/badge/c++-%252300599C.svg?style=for-the-badge&logo=c%252B%252B&logoColor=white
+# Library Management System
 
-A comprehensive console-based Library Management System implemented in C++ that handles book management, user accounts, borrowing/returning operations, and fine calculations.
+A console-based Library Management System developed in C++ using Object-Oriented Programming principles. The application helps manage books, users, and library transactions through a simple command-line interface.
 
-Features
-User Management
-Three user roles: Students, Faculty, and Librarians
+## Features
 
-Registration system with password authentication
+- Student, Faculty, and Librarian login
+- User registration and authentication
+- Book borrowing and returning
+- Fine calculation for overdue books
+- Borrowing history
+- Book management (Add, Update, Remove)
+- Persistent storage using text files
 
-Role-specific privileges:
+## Technologies Used
 
-Students: Borrow up to 3 books for 15 days
+- C++
+- Object-Oriented Programming (OOP)
+- STL (Vector)
+- File Handling
 
-Faculty: Borrow up to 5 books for 30 days
+## Project Structure
 
-Librarians: Full administrative access
-
-Book Operations
-Add/remove books with validation
-
-Modify book details (title, author, ISBN, etc.)
-
-Track book status (Available, Borrowed, Reserved)
-
-Display all books in the library
-
-Transaction System
-Borrow and return books with date tracking
-
-Automatic fine calculation (10₹/day for students)
-
-View borrowing history and current borrowed books
-
-Fine payment system
-
-Data Persistence
-Save/load books to books.txt
-
-Save/load user accounts to:
-
+```
+Library_Management.cpp
+books.txt
 students.txt
-
 faculty.txt
-
 librarians.txt
+README.md
+```
+
+## How to Run
+
+1. Compile the program
+
+```bash
+g++ Library_Management.cpp -o library
+```
+
+2. Run the executable
+
+```bash
+./library
+```
+
+(On Windows)
+
+```bash
+library.exe
+```
+
+## Concepts Used
+
+- Classes and Objects
+- Inheritance
+- Encapsulation
+- File Handling
+- STL Vector
